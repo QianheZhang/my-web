@@ -6,8 +6,8 @@ int main()
 {
     int r=0;
     int d=0;
-    int area=0;
-    int l=0;
+    double area=0;
+    double l=0;
     cout<<"ÊäÈë°ë¾¶£º ";
     cin>>r;
     d=2*r;
