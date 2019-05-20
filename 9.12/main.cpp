@@ -4,15 +4,15 @@ using namespace std;
 
 int main()
 {
-    Point w( 1.0, 1.0 );
-    Point x( 5.0, 1.0 );
-    Point y( 5.0, 3.0 );
-    Point z( 1.0, 3.0 );
-    Point j( 0.0, 0.0 );
-    Point k( 1.0, 0.0 );
-    Point m( 1.0, 1.0 );
-    Point n( 0.0, 1.0 );
-    Point v( 99.0, -2.3 );
+    Point a( 2.0, 3.0 );
+    Point b( 3.0, 1.0 );
+    Point c( 1.0, 2.0 );
+    Point d( 1.0, 1.0 );
+    Point e( 2.0, 4.0 );
+    Point f( 3.0, 0.0 );
+    Point g( 2.0, 3.0 );
+    Point h( 1.0, 2.0 );
+    Point i( 99.0, -2.0 );
 
     Rectangle rectangles[ 4 ];
 
@@ -23,16 +23,16 @@ int main()
         switch ( i )
         {
         case 0:
-            rectangles[ i ] = Rectangle( z, y, x, w );
+            rectangles[ i ] = Rectangle( d, c, b, a );
             break;
         case 1:
-            rectangles[ i ] = Rectangle( j, k, m, n );
+            rectangles[ i ] = Rectangle( h, g, f, e );
             break;
         case 2:
-            rectangles[ i ] = Rectangle( w, x, m, n );
+            rectangles[ i ] = Rectangle( a, b, g, h );
             break;
         case 3:
-            rectangles[ i ] = Rectangle( v, x, y, z );
+            rectangles[ i ] = Rectangle( i, b, c, d );
             break;
         }
 
