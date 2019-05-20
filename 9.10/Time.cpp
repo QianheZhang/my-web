@@ -78,11 +78,10 @@ void Time::printUniversal()
          << ( minute < 10 ? "0" : "" ) << minute << ':'
          << ( second < 10 ? "0" : "" ) << second;
 }
-
 void Time::printStandard()
 {
     cout << ( ( hour % 12 == 0 ) ? 12 : hour % 12 ) << ':'
          << ( minute < 10 ? "0": "" ) << minute << ':'
          << ( second < 10 ? "0": "" ) << second
-         << ( hour < 12 ? " AM" : " PM" );
+         << ( hour < 12 ? " am" : " pm" );
 }
